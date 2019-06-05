@@ -17,7 +17,7 @@
 function usage() {
   console.log(`
 USAGE
-$ cennz-cli script:run [OPTIONS] contract-initantiate ACCOUND_ID CODE_HASH PATH_TO_ABI ENDOWMENT GAS_LIMIT
+$ cennz-cli script:run [OPTIONS] contract-addr OWNER_ACCOUNT CODE_HASH PATH_TO_ABI
 
 OPTIONS
   -c, --endpoint=endpoint  [default: ws://localhost:9944] cennznet node endpoint
@@ -32,7 +32,7 @@ async function main() {
   const codeHash = argv[2];
   const abiFile = argv[3];
   if (!accountId || !codeHash || !abiFile) {
-    console.error('one of ACCOUND_ID, CODE_HASH, PATH_TO_ABI, ENDOWMENT or GAS_LIMIT is missing');
+    console.error('one of OWNER_ACCOUNT, CODE_HASH, PATH_TO_ABI, ENDOWMENT or GAS_LIMIT is missing');
     usage();
     process.exit(1);
   }

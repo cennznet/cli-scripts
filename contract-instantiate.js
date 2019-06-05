@@ -17,7 +17,7 @@
 function usage() {
   console.log(`
 USAGE
-$ cennz-cli script:run [OPTIONS] contract-initantiate ACCOUND_ID CODE_HASH PATH_TO_ABI ENDOWMENT GAS_LIMIT
+$ cennz-cli script:run [OPTIONS] contract-instantiate ACCOUND_ID CODE_HASH PATH_TO_ABI ENDOWMENT GAS_LIMIT
 
 OPTIONS
   -c, --endpoint=endpoint  [default: ws://localhost:9944] cennznet node endpoint
